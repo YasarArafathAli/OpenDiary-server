@@ -14,6 +14,7 @@ const server = new ApolloServer({
   resolvers,
   context: ({ req }) => ({ req, pubsub })
 });
+
 try {
   mongoose
   .connect(MONGODB, { useNewUrlParser: true })
