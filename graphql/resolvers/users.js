@@ -59,6 +59,7 @@ module.exports = {
       }
     ) {
       // Validate user data
+      college = college.toLowerCase();
       const { valid, errors } = validateRegisterInput(
         username,
         email,
